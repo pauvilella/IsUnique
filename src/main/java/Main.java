@@ -7,7 +7,7 @@ public class Main {
     boolean hasUniqueChars(String s) {
         int checker = 0;
         for(int i = 0; i < s.length(); i++) {
-            int value = s.charAt(i) - 'a'; // This makes that every input that is from a-z in lower case get a valure between 0 and 25.
+            int value = s.charAt(i) - 'a'; // This makes that every input that is from a-z in lower case get a value between 0 and 25.
             if((checker & (1 << value)) > 0) { //We check if there is a one in the position of the value
                 return false;
             } else {
